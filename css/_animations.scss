@@ -1,0 +1,85 @@
+//keyframes
+@keyframes cta {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes entranceScale {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes entranceAnimationTop {
+    0% {
+        transform: translateY(60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes entranceAnimationBottom {
+    0% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes entranceAnimationRight {
+    0% {
+        transform: translateX(-60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes entranceAnimationLeft {
+    0% {
+        transform: translateX(60px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.entrance-animation {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.entrance-animation-top {
+    animation: entranceAnimationTop 0.5s;
+}
+
+.entrance-animation-bottom {
+    animation: entranceAnimationBottom 0.5s;
+}
+
+.entrance-animation-right {
+    animation: entranceAnimationRight 0.5s;
+}
+
+.entrance-animation-left {
+    animation: entranceAnimationLeft 0.5s;
+}

@@ -1,0 +1,64 @@
+// Colors
+$color-primary: #007bff;
+$color-primary-opacity: #007bffd8;
+$color-secondary: #3d4f91;
+$color-secondary-opacity: #3d4f91d8;
+$color-background: #080f28;
+$color-background-light: #141a32;
+$color-background-secondary: #f6f6f6;
+$color-back-button-secondary: #181f36;
+$color-background-hero: linear-gradient(180deg, #080f285e 25%, #080f28 100%);
+$color-background-hero-projects: linear-gradient(180deg, #ffffff00 0%, #080f28 100%);
+$color-background-image-main: linear-gradient(to top, #080f28, #080f2888, #080f28);
+$color-textprimary: #ffffff;
+$color-textprimary-dark: #080f28;
+$color-textsecund: #4f6b95;
+$color-textthird: #edb709;
+$color-textfourth: #8da0bc;
+$color-icons-footer: rgba(255, 255, 255, 0.5);
+$color-primary-border: #737785;
+$color-secoundary-border: #222e57;
+
+//Fonts
+$font-primary: "Raleway", sans-serif;
+
+// Font size
+$font-size-vs: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-md: 1.6rem;
+$font-size-lg: 1.8rem;
+$font-size-lg2: 2.4rem;
+$font-size-xl: 4rem;
+$font-size-xxl: 5rem;
+$font-size-xxxl: 6rem;
+
+//Golbals styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-primary;
+    background: $color-background;////////////////////Cambiar en la implementacion
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-track {
+    background-color: $color-background-light;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+    border-radius: 10px;
+}
+
+main {
+    z-index: 90;
+}

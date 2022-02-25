@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="theme-color" content="#007bff" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/normalice.css" />
+    <link rel="stylesheet" href="./css/projects-section.css" />
+    <link rel="stylesheet" href="./css/projects-section-tablet.css" media="(min-width: 768px)">
+    <link rel="shortcut icon" href="./src/icons/sebastian-icon-logo.svg">
+    <title>Dynamic Portfolio</title>
+</head>
+
+<body>
+
+    <section class="projects-section-main">
+        <section class="projects-section-container">
+            <section class="projects-category-menu">
+                <img class="category-menu__logo" src="https://i.postimg.cc/g0tJtwx6/logo-name.png"
+                    alt="Logo Sebastian Pedroza">
+                <form class="category-menu__serch" action="">
+                    <input type="text" class="search__input" id="searchInput" placeholder="Search">
+                </form>
+                <ul class="categories-list">
+                    <il class="categories__item"><a href="/"
+                            class="categories__item-link categories__item-link--active">All</a></il>
+                    <il class="categories__item"><a href="/" class="categories__item-link">Web</a></il>
+                    <il class="categories__item"><a href="/" class="categories__item-link">Mobile</a></il>
+                    <il class="categories__item"><a href="/" class="categories__item-link">Design</a></il>
+                </ul>
+            </section>
+
+            <section class="grid" id="grid">
+                <div class="item" data-category="web" data-labels="cuidad genial" data-description="cuidad 1">
+                    <div class="item-content">
+                        <img src="./src/images/ciudad1.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="mobile" data-labels="persona" data-description="persona 1">
+                    <div class="item-content">
+                        <img src="./src/images/persona1.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="design" data-labels="naturaleza" data-description="naturaleza 1">
+                    <div class="item-content">
+                        <img src="./src/images/naturaleza1.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="web" data-labels="animal" data-description="animal 1">
+                    <div class="item-content">
+                        <img src="./src/images/animal1.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="design" data-labels="cuidad" data-description="cuidad 2">
+                    <div class="item-content">
+                        <img src="./src/images/ciudad2.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="mobile" data-labels="naturaleza" data-description="naturaleza 2">
+                    <div class="item-content">
+                        <img src="./src/images/paisaje1.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="design" data-labels="persona" data-description="persona 2">
+                    <div class="item-content">
+                        <img src="./src/images/persona2.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="web" data-labels="animal" data-description="animal 2">
+                    <div class="item-content">
+                        <img src="./src/images/animal2.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+
+                <div class="item" data-category="mobile" data-labels="naturaleza" data-description="naturaleza 3">
+                    <div class="item-content">
+                        <img src="./src/images/paisaje2.png" alt="Project image" class="item__img">
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="./js/projects-section.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+@import "./golbals";
+@import "./animations";
+
+.projects-section-main {
+    inline-size: 100%;
+    margin-block-start: 70px;
+}
+
+.projects-section-container {
+    inline-size: 90%;
+    max-inline-size: 1280px;
+    margin: 0 auto;
+}
+
+/*__________________________________________*/
+// SECTION  projects-category-menu
+/*__________________________________________*/
+
+.projects-category-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inline-size: 100%;
+}
+
+.category-menu__logo {
+    inline-size: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin-block-end: 32px;
+}
+
+.category-menu__serch {
+    inline-size: 70%;
+    max-inline-size: 500px;
+    text-align: center;
+    margin-block-end: 32px;
+}
+
+.search__input {
+    inline-size: 100%;
+    block-size: 40px;
+    padding: 0 20px;
+    font-size: $font-size-md;
+    font-weight: 500;
+    line-height: 40px;
+    color: $color-textsecund;
+    text-align: center;
+    background-color: rgba($color-secondary, 0.1);
+    border-radius: 100px;
+    border: 1px solid rgba($color-secondary, 0.5);
+    outline: none;
+}
+
+.search__input::placeholder {
+    color: $color-textfourth;
+}
+
+.search__input:focus {
+    border: 1px solid $color-secondary;
+}
+
+.categories-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    inline-size: 100%;
+    max-inline-size: 600px;
+    margin-block-end: 32px;
+}
+
+.categories__item {
+    display: block;
+}
+
+.categories__item-link {
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: $font-size-lg;
+    font-weight: 700;
+    color: $color-textfourth;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.categories__item-link:hover {
+    color: $color-textprimary;
+    animation: cta 0.3s ease-in-out;
+}
+
+.categories__item-link--active {
+    font-weight: 700;
+    color: $color-textprimary;
+}
+
+/*__________________________________________*/
+// SECTION  grid
+/*__________________________________________*/
+
+.grid {
+    position: relative;
+    inline-size: 100%;
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+}
+
+.uploaded-images {
+    opacity: 1;
+}
+
+.item-content {
+    position: relative;
+}
+
+.grid .item {
+    position: absolute;
+    display: block;
+    inline-size: calc(100% - 20px);
+    padding: 0;
+    margin: 10px;
+}
+
+.item__img {
+    inline-size: 100%;
+    vertical-align: top;
+    cursor: pointer;
+}
