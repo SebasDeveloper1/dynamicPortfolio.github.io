@@ -117,7 +117,7 @@
 .grid .item {
     position: absolute;
     display: block;
-    inline-size: calc(100% - 20px);
+    inline-size: calc(50% - 20px);
     padding: 0;
     margin: 10px;
 }
@@ -126,4 +126,127 @@
     inline-size: 100%;
     vertical-align: top;
     cursor: pointer;
+}
+
+/*__________________________________________*/
+// SECTION  overay
+/*__________________________________________*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    inline-size: 100%;
+    block-size: 100vh;
+    background-color: rgba($color-background, 0.8);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay--active {
+    display: flex;
+}
+
+.container-img {
+    position: relative;
+    inline-size: 100%;
+    max-inline-size: 400px;
+}
+
+.overlay__img {
+    width: 100%;
+    object-fit: center;
+    object-position: center;
+}
+
+.overlay__btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    inline-size: 40px;
+    block-size: 40px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay__btn-icon {
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+.overley__description {
+    display: block;
+    max-inline-size: 90%;
+    padding: 20px;
+    margin-block-start: 10px;
+    font-size: $font-size-md;
+    color: $color-textprimary;
+    text-align: center;
+    border-radius: 10px;
+    background-color: $color-background-light;
+}
+
+/*__________________________________________*/
+// SECTION  footer
+/*__________________________________________*/
+
+footer {
+    margin-block: 70px;
+    padding: 16px 0;
+    background-color: $color-background-light;
+    border-radius: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    inline-size: 100%;
+    margin-block-end: 32px;
+}
+
+.contact-options-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inline-size: 100px;
+    block-size: 100px;
+    margin: 20px;
+    padding: 10px;
+    font-size: $font-size-md;
+    color: $color-textprimary;
+    text-decoration: none;
+    background-color: $color-secondary-opacity;
+    border-radius: 50%;
+}
+
+.contact-options-link-img {
+    inline-size: 50px;
+    block-size: 50px;
+}
+
+.information-author {
+    inline-size: 100%;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: $font-size-lg;
+    font-weight: 400;
+    color: $color-textprimary;
+    margin-block-end: 12px;
+}
+
+.footer__sentence {
+    font-size: $font-size-md;
+    font-weight: 400;
+    color: $color-textthird;
+    margin-block-end: 16px;
 }

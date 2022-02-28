@@ -31,6 +31,22 @@ main {
   z-index: 90;
 }
 
+.secondary__button {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 32px;
+  background-color: #3d4f91;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secondary__button:hover {
+  background-color: #007bff;
+}
+
 @-webkit-keyframes cta {
   0% {
     -webkit-transform: scale(1);
@@ -338,7 +354,7 @@ main {
 .grid .item {
   position: absolute;
   display: block;
-  inline-size: calc(100% - 20px);
+  inline-size: calc(50% - 20px);
   padding: 0;
   margin: 10px;
 }
@@ -347,4 +363,154 @@ main {
   inline-size: 100%;
   vertical-align: top;
   cursor: pointer;
+}
+
+/*__________________________________________*/
+/*__________________________________________*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  inline-size: 100%;
+  block-size: 100vh;
+  background-color: rgba(8, 15, 40, 0.8);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container-img {
+  position: relative;
+  inline-size: 100%;
+  max-inline-size: 400px;
+}
+
+.overlay__img {
+  width: 100%;
+  -o-object-fit: center;
+     object-fit: center;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.overlay__btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  inline-size: 40px;
+  block-size: 40px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.overlay__btn-icon {
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.overley__description {
+  display: block;
+  max-inline-size: 90%;
+  padding: 20px;
+  -webkit-margin-before: 10px;
+          margin-block-start: 10px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #141a32;
+}
+
+/*__________________________________________*/
+/*__________________________________________*/
+footer {
+  margin-block: 70px;
+  padding: 16px 0;
+  background-color: #141a32;
+  border-radius: 10px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  inline-size: 100%;
+  -webkit-margin-after: 32px;
+          margin-block-end: 32px;
+}
+
+.contact-options-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  inline-size: 100px;
+  block-size: 100px;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #3d4f91d8;
+  border-radius: 50%;
+}
+
+.contact-options-link-img {
+  inline-size: 50px;
+  block-size: 50px;
+}
+
+.information-author {
+  inline-size: 100%;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  -webkit-margin-after: 12px;
+          margin-block-end: 12px;
+}
+
+.footer__sentence {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #edb709;
+  -webkit-margin-after: 16px;
+          margin-block-end: 16px;
 }

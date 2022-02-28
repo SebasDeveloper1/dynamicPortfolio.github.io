@@ -30,5 +30,28 @@ window.addEventListener('load', () => {
             grid.filter((item) => item.getElement().dataset.labels.includes(seacrch));
         }
     });
+
+    //listener for images
+    const overlay = document.getElementById('overlay');
+    document.querySelectorAll('.grid .item__img').forEach((item) => {
+        item.addEventListener('click', (event) => {
+            const route = item.getAttribute('src');
+            const description = item.parentNode.parentNode.dataset.description;
+            overlay.classList.add('overlay--active');
+            document.querySelector('#overlay .overlay__img').src = route;
+            document.querySelector('#overlay .overley__description').innerHTML = description;
+        });
+    });
+
+    const overlayBtn = document.getElementById('overlayBtn');
+    overlayBtn.addEventListener('click', (event) => {
+        overlay.classList.remove('overlay--active');
+    });
+
+    //eventListener del overlay button
+    overlay.addEventListener('click', (event) => {
+        // overlay.classList.remove('overlay--active');
+        event.target.id === 'overlay' ? overlay.classList.remove('overlay--active') : '';
+    });
 });
 

@@ -45,7 +45,7 @@ html {
 
 body {
     font-family: $font-primary;
-    background: $color-background;////////////////////Cambiar en la implementacion
+    background: $color-background; ////////////////////Cambiar en la implementacion
 }
 
 body::-webkit-scrollbar {
@@ -61,4 +61,20 @@ body::-webkit-scrollbar-thumb {
 
 main {
     z-index: 90;
+}
+
+.secondary__button {
+    display: inline-block;
+    font-size: $font-size-md;
+    font-weight: 500;
+    color: $color-textprimary;
+    text-align: center;
+    border-radius: 32px;
+    background-color: $color-secondary;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.secondary__button:hover {
+    background-color: $color-primary;
 }
