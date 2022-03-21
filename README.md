@@ -9,15 +9,17 @@ Dynamic Portfolio Grid Implementing [Muuri](https://muuri.dev/ "Murri"). 💚�
 ### 🔨 Languages and Tools:
 
  <div align="center">
-<a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"> <img src="https://i.postimg.cc/mDdX2P3h/html.png" align="left" alt="html" title="html" height='80px'/> </a>
+<a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank"> <img src="https://i.postimg.cc/mDdX2P3h/html.png" align="left" alt="html" title="html" height='70px'/> </a>
 
-<a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"> <img src="https://i.postimg.cc/L5YT9N60/css.png" align="left" alt="css" title="css" height='80px'/> </a>
+<a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank"> <img src="https://i.postimg.cc/L5YT9N60/css.png" align="left" alt="css" title="css" height='70px'/> </a>
 
-<a href="https://sass-lang.com/" target="_blank"> <img src="https://i.postimg.cc/Jzm2xChr/sass.png" align="left" alt="sass" title="sass" height='80px'/> </a>
+<a href="https://sass-lang.com/" target="_blank"> <img src="https://i.postimg.cc/Jzm2xChr/sass.png" align="left" alt="sass" title="sass" height='70px'/> </a>
+
+<a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank"> <img src="https://i.postimg.cc/QCs9HRwH/javascript.png" align="left" alt="javascript" title="javascript" height='70px'/> </a>
 
 <a href="https://muuri.dev/" target="_blank"> <img src="https://i.postimg.cc/QxttKn2H/muuri-logo.png" align="left" alt="muuri" title="muuri" height='70px'/> </a>
 
-<a href="https://git-scm.com/" target="_blank"> <img src="https://i.postimg.cc/0jS9Y1yG/git-scm.png" align="left" alt="git" title="git" height='80px'/> </a>
+<a href="https://git-scm.com/" target="_blank"> <img src="https://i.postimg.cc/0jS9Y1yG/git-scm.png" align="left" alt="git" title="git" height='70px'/> </a>
 
 </div>
 
