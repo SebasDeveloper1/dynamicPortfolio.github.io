@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
     grid.refreshItems().layout();
     document.getElementById('grid').classList.add('uploaded-images');
 
-    // Listener de los enlaces para filtrar por categorias
+    // Listener de los enlaces para filtrar por categorias por medio de dataset
     const links = document.querySelectorAll('.categories__item-link');
     links.forEach((link) => {
         link.addEventListener('click', (event) => {
